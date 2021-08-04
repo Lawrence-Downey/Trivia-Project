@@ -1,0 +1,102 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: blue;
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 yellow;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix{
+    padding: 2rem 2.5rem;
+    color: orange;
+}
+
+.choice-text{
+    padding: 2rem;
+    width: 100%;;
+}
+
+.correct{
+    background: linear-gradient(32deg, rgb(12, 230, 12) 0%, green 100%)
+}
+
+.incorrect{
+    background: linear-gradient(32deg, red, red, 100%);
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+    color: yellow;
+}
+
+#progressBar{
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid orange;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    background: orange;
+    width: 0%;
+}
+
+.container2 {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .container2:hover .overlay {
+    opacity: 1;
+  }
+
+@media screen and (max-width: 768px ){
+    .choice-container{
+        min-width: 40rem;
+    }
+}
